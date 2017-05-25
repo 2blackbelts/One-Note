@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void refreshFont(){
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        String fontSize = sharedPref.getString("font_preference", "");
+        String fontSize = sharedPref.getString("font_preference", "16");
         int fontSizeInt = Integer.parseInt(fontSize);
         longText.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSizeInt);
         Log.d("menu", String.valueOf(fontSizeInt));
